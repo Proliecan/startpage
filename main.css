@@ -11,17 +11,18 @@ body{
 .viewport{
     display: flex;
     flex-direction: column;
+    gap: 5vh;
     height: 95vh;
-    /* justify-items: center; */
-}
-.viewport>*{
-    margin: auto;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
+#time{
+    text-align: center;
+}
 #clock{
     font-size: 185%;
     background: linear-gradient(210deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     background-clip: text;
     color: transparent;
-}
+
