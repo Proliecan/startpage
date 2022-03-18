@@ -5,9 +5,10 @@ function startClock() {
     document.getElementById("clock").innerHTML = h + ":" + m;
 
     let weekday = {weekday: "long"}
+    let date = {day: "2-digit", month: "2-digit", year: "numeric"}
     let lang = document.documentElement.lang;
     document.getElementById("weekday").innerHTML = time.toLocaleDateString(lang, weekday);
-    document.getElementById("date").innerHTML = time.toLocaleDateString(lang);
+    document.getElementById("date").innerHTML = time.toLocaleDateString(lang, date);
     setTimeout(startClock, 1000);
 }
 
