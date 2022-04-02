@@ -49,5 +49,5 @@ form.search > [type = "search"]{
     border: none;
     outline: none;
     border-radius: inherit;
-
+    font-size: 4vh;
 }
